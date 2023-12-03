@@ -57,7 +57,7 @@
         <ul>
           <li><a class="nav-link scrollto {{ (request()->segment(2) == 'home') ? 'active' : '' }}" href="{{route('user#home')}}">Home</a></li>
           <li><a class="nav-link scrollto {{ (request()->segment(2) == 'menu') ? 'active' : '' }}" href="{{route('user#menu')}}">Menu</a></li>
-          <li class="dropdown" ><a href="#"><span>Admin </span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown" ><a href="#"><span>LogIn </span> <i class="bi bi-chevron-down"></i></a>
                <ul style='width:250px;padding:10px;'>
                     @if (empty(Auth::user()))
                     <form action="{{route('login')}}" method="POST">
